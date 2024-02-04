@@ -1,0 +1,21 @@
+@model CQRS.CQRSPattern.Commands.CreateProductCommand
+@{
+    ViewData["Title"] = "AddProduct";
+}
+<div class="container">
+<form method="post">
+    <label asp-for="Name">Product Name</label>
+    <input type="text" asp-for="Name" class="form-control">
+    <br>
+    <label asp-for="Stock">Product Stock</label>
+    <input type="text" asp-for="Stock"class="form-control">
+    <br>
+    <label asp-for="Price">Product Price</label>
+    <input type="text" asp-for="Price"class="form-control">
+    <br>
+    <label asp-for="Description">Description</label>
+    <input type="text" asp-for="Description"class="form-control">
+    <br>
+    <button class="btn btn-dark"> Add Product </button>
+</form>
+</div>

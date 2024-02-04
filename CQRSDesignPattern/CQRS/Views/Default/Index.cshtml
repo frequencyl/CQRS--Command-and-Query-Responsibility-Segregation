@@ -1,0 +1,27 @@
+@model List<CQRS.CQRSPattern.Results.GetProductQueryResult>
+<div class="container">
+    <br>
+    <table class="table table-bordered">
+        <tr>
+            <th>#</th>
+            <th>Product Name</th>
+            <th>Price</th>
+            <th>Stock</th>
+            <th>Delete</th>
+            <th>Update</th>
+            <th>Get</th>
+        </tr>
+        @foreach(var item in Model){
+            <tr>
+                <td>@item.ID</td>
+                <td>@item.ProductName</td>
+                <td>@item.Price</td>
+                <td>@item.Stock</td>
+                <td><a href="/Default/GetProduct/@item.ID" class="btn btn-dark">Get Product</a></td>
+                <td><a href="/Default/DeleteProduct/@item.ID" class="btn btn-danger">Delete Product</a></td>
+                <td><a href="/Default/UpdateProduct/@item.ID" class="btn btn-primary">Update Product</a></td>
+            </tr>
+        }
+    </table>
+    <a href="/Default/AddProduct/" class="btn btn-primary">Add New Product</a>
+</div>

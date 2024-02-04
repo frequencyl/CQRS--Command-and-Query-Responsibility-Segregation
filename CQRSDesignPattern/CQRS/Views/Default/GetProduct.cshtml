@@ -1,0 +1,19 @@
+
+@model CQRS.CQRSPattern.Results.GetProductByIDQueryResult
+
+<div class="container">
+<form method="get">
+    <label asp-for="ID">ID</label>
+    <input type="text" asp-for="ID"class="form-control">
+    <label asp-for="ProductName">Product Name</label>
+    <input type="text" asp-for="ProductName" class="form-control">
+    <br>
+    <label asp-for="Stock">Product Stock</label>
+    <input type="text" asp-for="Stock"class="form-control">
+    <br>
+    <label asp-for="Price">Product Price</label>
+    <input type="text" asp-for="Price"class="form-control">
+    <br>
+</form>
+<button class="btn btn-danger"> <a href="/Default/Index"> Go to back</a> </button>
+</div>
