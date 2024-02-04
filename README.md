@@ -1,2 +1,3 @@
 # CQRS -Command and Query Responsibility Segregation
  CQRS stands for Command and Query Responsibility Segregation, a pattern that separates read and update operations for a data store. Implementing CQRS in your application can maximize its performance, scalability, and security
+This project was made using asp.net core mvc 7.0. I used migrations and basic CRUD operations in this project. In this project where I used MSSQL, I achieved a cleaner structure by moving the Read and Update operations apart. This design pattern is widely used by pages with a high readership rate, such as Trendyol Ekşisözlük.
